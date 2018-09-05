@@ -1,0 +1,129 @@
+@mainColor: #006699;
+html,
+body {
+    height: 100%;
+}
+
+body {
+    padding: 45px 0;
+    background: #fff;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 防止边框padding超出页面宽度出现滚动条 */
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #666;
+    text-decoration: none;
+    /*一般移动端清除a的点击高亮  透明就表示去掉*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    border: none;
+    outline: none;
+    /*清除移动端默认的表单样式*/
+    -webkit-appearance: none;
+}
+
+img {
+    /* 解决图片3px的间距 */
+    vertical-align: middle;
+}
+
+// 头部公共样式
+#header {
+    width: 100%;
+    height: 45px;
+    position: fixed;
+    top: 0;
+    background: @mainColor;
+    z-index: 999;
+    >h4 {
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        margin: 0;
+        font-weight: normal;
+    }
+    a {
+        &.fa-search {
+            position: absolute;
+            right: 20px;
+            top: 13px;
+        }
+        color: #fff;
+    }
+}
+
+#main {
+    background: #fff;
+    position: relative;
+    height: 100%;
+}
+
+#footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    background: @mainColor;
+    height: 45px;
+    >div {
+        >a {
+            &.active {
+                color: orange;
+            }
+            padding: 7px;
+            text-align: center;
+            color: #fff;
+            display: block;
+            font-size: 15px;
+            >span {
+                padding: 2px;
+                display: block;
+                font-size: 12px;
+            }
+        }
+    }
+}
+.header {
+    position: fixed;
+    background: @mainColor;
+    width: 100%;
+    height: 45px;
+    display: flex;
+    top: 0;
+    z-index: 999;
+    text-align: center;
+    a {
+        font-size: 18px;
+        text-align: center;
+        line-height: 45px;
+        color: #fff;
+        width: 40px;
+        height: 45px;
+    }
+    >form {
+        flex: 1;
+        padding-top: 7px;
+        >input {
+            background: #fff;
+            height: 30px;
+            width: 100%;
+            padding: 0 10px;
+            border-radius: 3px;
+            margin-bottom: 0;
+            text-align: left;
+            font-size: 14px;
+        }
+    }
+}

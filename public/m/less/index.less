@@ -1,0 +1,104 @@
+@import 'base.less';
+// 导航栏
+#nav {
+    padding: 10px;
+    a {
+        display: block;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 广告专区
+#banner {
+    padding: 0 10px;
+    .left {
+        float: left;
+        >a {
+            display: block;
+            >img {
+                float: left;
+                height: 120px;
+                width: 50%;
+            }
+        }
+    }
+    .right {
+        >a {
+            display: block;
+            >img {
+                float: left;
+                height: 240px;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 品牌专区
+#brand {
+    .product {
+        .product-title {
+            padding: 10px;
+            >img {
+                width: 100%;
+            }
+        }
+        .product-connet {
+            a {
+                display: block;
+                >img {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+// 运动专区
+#sport,
+#woman,
+#man {
+    padding: 0 10px;
+    .product-title {
+        padding: 10px;
+        >img {
+            width: 100%;
+        }
+    }
+    .product-connet {
+        .mui-row {
+            >div {
+                text-align: center;
+                padding: 0 10px;
+                &:nth-child(n+3) {
+                    margin-top: 10px;
+                }
+                >a {
+                    padding: 10px 0;
+                    display: block;
+                    box-shadow: 0 0 5px #ccc;
+                    img {
+                        width: 100%;
+                    }
+                    .price {
+                        color: red;
+                        font-size: 12px;
+                        del {
+                            color: #ccc;
+                        }
+                    }
+                    .btn {
+                        background: @mainColor;
+                        border: @mainColor;
+                    }
+                }
+            }
+        }
+    }
+}
+#man{
+    padding-bottom: 10px;
+}
+
